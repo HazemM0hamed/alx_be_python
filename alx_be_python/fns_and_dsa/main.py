@@ -9,4 +9,4 @@ def main():
     result = perform_operation(num1, num2, operation)
     print(f"result: {result}")
     if __name__ == "__main__":
-        main()
+        main()   
