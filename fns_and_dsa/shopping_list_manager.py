@@ -12,11 +12,20 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            pass
+            item = input("Enter the item to add: ")
+            shopping_list.append(item)
+            print(f"Added {item} to the shopping list.")
         elif choice == '2':
-            pass
+            item = input("Enter the item to remove: ")
+            if item in shopping_list:
+                shopping_list.remove(item)
+                print(f"Removed {item} from the shopping list.")
+            else:
+                print(f"{item} not found in the shopping list.")
         elif choice == '3':
-            pass
+            print("Current shopping list:")
+            for idx, item in enumerate(shopping_list, start=1):
+                print(f"{idx}. {item}")
         elif choice == '4':
             print("Goodbye!")
             break
