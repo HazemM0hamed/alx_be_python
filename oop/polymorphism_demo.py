@@ -1,3 +1,4 @@
+import math
 class shape:
     def area(self):
         raise NotImplementedError("Subclasses must implement this method")
